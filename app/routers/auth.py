@@ -1,24 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from app.schemas import UserLogin, UserSignup
 import random
-from logging.config import fileConfig
-import logging
-from app.custom_json_formatter import CustomJsonFormatter
-
-fileConfig('./app/logging_config.ini')
-
-
-# Ensure handlers use the custom JSON formatter
-def update_handlers_with_custom_formatter(logger_name):
-    logger = logging.getLogger(logger_name)
-    for handler in logger.handlers:
-        if isinstance(handler, logging.FileHandler):
-            handler.setFormatter(CustomJsonFormatter())
-
-
-update_handlers_with_custom_formatter('auth_logger')
-update_handlers_with_custom_formatter('order_logger')
-update_handlers_with_custom_formatter('product_logger')
+from app.logger_config import get_logger
 
 # Create an instance of APIRouter
 auth_router = APIRouter(
@@ -29,20 +12,20 @@ auth_router = APIRouter(
 
 @auth_router.post("/login", status_code=status.HTTP_200_OK)
 async def login(user: UserLogin):
-    logger = logging.getLogger('auth_logger')
+    auth_logger = get_logger("auth_logger")
     success = random.choice([True, False])
 
     if not success:
-        logger.error("Login failed for user: %s", user.username)
+        auth_logger.error("Login failed for user: %s", user.username)
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Login failed")
 
-    logger.info("User '%s' logged in successfully", user.username)
+    auth_logger.info("User '%s' logged in successfully", user.username)
     return {"username": user.username}
 
 
 @auth_router.post("/signup", status_code=status.HTTP_201_CREATED)
 async def signup(user: UserSignup):
-    logger = logging.getLogger('auth_logger')
+    logger = get_logger('auth_logger')
     success = random.choice([True, False])
 
     if not success:
@@ -55,7 +38,7 @@ async def signup(user: UserSignup):
 
 @auth_router.post("/getuser/{username}", status_code=status.HTTP_302_FOUND)
 async def get_profile(username: str):
-    logger = logging.getLogger('auth_logger')
+    logger = get_logger('auth_logger')
     success = random.choice([True, False])
 
     if not success:

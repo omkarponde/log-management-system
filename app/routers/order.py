@@ -1,24 +1,8 @@
 from fastapi import APIRouter, HTTPException, status
 from app.schemas import Order
 import random
-from logging.config import fileConfig
-import logging
-from app.custom_json_formatter import CustomJsonFormatter
+from app.logger_config import get_logger
 
-fileConfig('./app/logging_config.ini')
-
-
-# Ensure handlers use the custom JSON formatter
-def update_handlers_with_custom_formatter(logger_name):
-    logger = logging.getLogger(logger_name)
-    for handler in logger.handlers:
-        if isinstance(handler, logging.FileHandler):
-            handler.setFormatter(CustomJsonFormatter())
-
-
-update_handlers_with_custom_formatter('auth_logger')
-update_handlers_with_custom_formatter('order_logger')
-update_handlers_with_custom_formatter('product_logger')
 
 # Create an instance of APIRouter
 order_router = APIRouter(
@@ -30,7 +14,7 @@ order_router = APIRouter(
 @order_router.post("", status_code=status.HTTP_201_CREATED)
 async def create_order(order: Order):
     success = random.choice([True, False])
-    logger = logging.getLogger('order_logger')
+    logger = get_logger('order_logger')
     if not success:
         failure_cause = random.choice(["Item not available", "Server Error", "Unauthorized"])
         logger.error(f"Create Order - Failed to create order by user ID {order.user_id}: {failure_cause}")
@@ -53,7 +37,7 @@ async def create_order(order: Order):
 @order_router.get("/{order_id}", status_code=status.HTTP_200_OK)
 async def get_order(order_id: int):
     success = random.choice([True, False])
-    logger = logging.getLogger('order_logger')
+    logger = get_logger('order_logger')
     if not success:
         failure_cause = random.choice(["Order not found", "Server Error"])
         logger.error(
@@ -72,7 +56,7 @@ async def get_order(order_id: int):
 @order_router.put("/{order_id}", status_code=status.HTTP_200_OK)
 async def update_order(order_id: int, order: Order):
     success = random.choice([True, False])
-    logger = logging.getLogger('order_logger')
+    logger = get_logger('order_logger')
     if not success:
         failure_cause = random.choice(["Order not found", "Server Error", "Unauthorized"])
         logger.error(
@@ -96,7 +80,7 @@ async def update_order(order_id: int, order: Order):
 @order_router.delete("/{order_id}", status_code=status.HTTP_200_OK)
 async def delete_order(order_id: int, order: Order):
     success = random.choice([True, False])
-    logger = logging.getLogger('order_logger')
+    logger = get_logger('order_logger')
     if not success:
         failure_cause = random.choice(["Order not found", "Server Error", "Unauthorized"])
         logger.error(

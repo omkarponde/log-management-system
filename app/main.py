@@ -1,18 +1,10 @@
-import logging.config
-import configparser
+import logging
+import os
 from fastapi import FastAPI
 from app.routers import auth_router, order_router, product_router, log_router
 
-# Read logging configuration from INI file
-config = configparser.ConfigParser()
-config.read('./app/logging_config.ini')
 
-# Apply logging configuration
-logging.config.fileConfig('./app/logging_config.ini')
-
-# Initialize the FastAPI application
 app = FastAPI()
-
 # Include the auth router
 app.include_router(auth_router)
 app.include_router(order_router)
@@ -20,7 +12,29 @@ app.include_router(product_router)
 app.include_router(log_router)
 
 
-# Define a route using a decorator
+def create_log_directory():
+    current_dir = os.path.dirname(__file__)
+    log_dir = os.path.join(current_dir, "logs")
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+        for dir in ['auth', 'order', 'product']:
+            dir_path = os.path.join(log_dir, dir)
+            os.makedirs(dir_path)
+            for filename in ['app.log', 'error.log']:
+                filepath = os.path.join(dir_path, filename)
+                if not os.path.exists(filepath):
+                    open(filepath, 'a').close()
+        print(f"Created log directory: {log_dir}")
+    else:
+        print(f"Log directory already exists: {log_dir}")
+
 @app.get("/")
 async def read_root():
     return {"message": "Hello, FastAPI!!!"}
+
+if __name__ == "__main__":
+    create_log_directory()
+
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
