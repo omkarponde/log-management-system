@@ -20,9 +20,11 @@ app.include_router(order_router)
 app.include_router(product_router)
 app.include_router(log_router)
 
+
 @app.get("/docs", include_in_schema=False)
 async def custom_swagger_ui_html():
     return get_swagger_ui_html(openapi_url="/openapi.json", title="FastAPI Swagger UI")
+
 
 # Define a route using a decorator
 @app.get("/")
