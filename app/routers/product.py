@@ -8,7 +8,7 @@ product_router = APIRouter(prefix="/product", tags=["Product"])
 @product_router.post("", status_code=status.HTTP_201_CREATED)
 async def add_product(product: Product):
     success = random.choice([True, False])
-    logger = get_logger('product_logger')
+    logger = logging.getLogger('product_logger')
     if not success:
         failure_cause = random.choice(["Product with same name already exists.", "Server Error", "Unauthorized"])
         logger.error(f"Create Product - Failed to create product for user ID {product.user_id}: {failure_cause}")
@@ -32,7 +32,7 @@ async def add_product(product: Product):
 @product_router.put("/{product_id}", status_code=status.HTTP_200_OK)
 async def update_product(product_id: int, product: Product):
     success = random.choice([True, False])
-    logger = get_logger('product_logger')
+    logger = logging.getLogger('product_logger')
     if not success:
         failure_cause = random.choice(
             ["Product with same name already exists.", "Product not found", "Server Error", "Unauthorized"]
@@ -60,7 +60,7 @@ async def update_product(product_id: int, product: Product):
 @product_router.get("/{product_id}", status_code=status.HTTP_200_OK)
 async def get_product(product_id: int):
     success = random.choice([True, False])
-    logger = get_logger('product_logger')
+    logger = logging.getLogger('product_logger')
     if not success:
         failure_cause = random.choice(
             ["Product not found", "Server Error"]
@@ -86,7 +86,7 @@ async def get_product(product_id: int):
 @product_router.delete("/{product_id}", status_code=status.HTTP_200_OK)
 async def delete_product(product_id: int, product: Product):
     success = random.choice([True, False])
-    logger = get_logger('product_logger')
+    logger = logging.getLogger('product_logger')
     if not success:
         failure_cause = random.choice(
             ["Product not Found", "Server Error", "Unauthorized"]
