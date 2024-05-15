@@ -160,3 +160,25 @@
 {"level": "error", "log_string": "Create Order - Failed to create order by user ID 0: Item not available", "timestamp": "2024-05-15T08:03:32Z", "metadata": {"source": "../logs/order/app.log"}}
 {"level": "info", "log_string": "Create Order - Order 257782 created successfully for user ID 0", "timestamp": "2024-05-15T08:03:33Z", "metadata": {"source": "../logs/order/app.log"}}
 {"level": "error", "log_string": "Create Order - Failed to create order by user ID 0: Server Error", "timestamp": "2024-05-15T08:03:33Z", "metadata": {"source": "../logs/order/app.log"}}
+{"level": "info", "log_string": "Create Order - Order 987029 created successfully for user ID 0", "timestamp": "2024-05-15T10:51:03Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Create Order - Failed to create order by user ID 10033: Server Error", "timestamp": "2024-05-15T10:51:24Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Create Order - Failed to create order by user ID 10033: Item not available", "timestamp": "2024-05-15T10:51:26Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Create Order - Order 890087 created successfully for user ID 10033", "timestamp": "2024-05-15T10:51:27Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Get Order - Failed to get order 234: Server Error", "timestamp": "2024-05-15T10:52:03Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Get Order - Failed to get order 234: Server Error", "timestamp": "2024-05-15T10:52:05Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Get Order - Successfully retrieved order 234", "timestamp": "2024-05-15T10:52:06Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Update Order - Failed to update order 0 by user ID 0: Server Error", "timestamp": "2024-05-15T10:52:39Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Update Order - Successfully updated order 12345 by user ID 0.", "timestamp": "2024-05-15T10:52:42Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Update Order - Failed to update order 0 by user ID 0: Unauthorized", "timestamp": "2024-05-15T10:52:42Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Update Order - Successfully updated order 12345 by user ID 0.", "timestamp": "2024-05-15T10:52:43Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Update Order - Failed to update order 0 by user ID 0: Order not found", "timestamp": "2024-05-15T10:52:44Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Update Order - Failed to update order 0 by user ID 0: Order not found", "timestamp": "2024-05-15T10:52:44Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Update Order - Failed to update order 0 by user ID 0: Order not found", "timestamp": "2024-05-15T10:52:44Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Update Order - Successfully updated order 12345 by user ID 0.", "timestamp": "2024-05-15T10:52:44Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Update Order - Successfully updated order 12345 by user ID 0.", "timestamp": "2024-05-15T10:52:45Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Delete Order - Failed to delete order 0 by user ID 0: Server Error", "timestamp": "2024-05-15T10:53:07Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Delete Order - Successfully deleted order 123456", "timestamp": "2024-05-15T10:53:09Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Delete Order - Successfully deleted order 123456", "timestamp": "2024-05-15T10:53:10Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Delete Order - Failed to delete order 0 by user ID 0: Order not found", "timestamp": "2024-05-15T10:53:10Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "info", "log_string": "Delete Order - Successfully deleted order 123456", "timestamp": "2024-05-15T10:53:10Z", "metadata": {"source": "./logs/order/app.log"}}
+{"level": "error", "log_string": "Delete Order - Failed to delete order 0 by user ID 0: Unauthorized", "timestamp": "2024-05-15T10:53:10Z", "metadata": {"source": "./logs/order/app.log"}}

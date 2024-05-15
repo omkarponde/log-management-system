@@ -1,5 +1,4 @@
 import logging.config
-import configparser
 import os
 
 

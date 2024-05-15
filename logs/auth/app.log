@@ -1,0 +1,42 @@
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:19:44Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:19:48Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:19:48Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:19:48Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:19:49Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:19:49Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:42:33Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:42:34Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:42:34Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:42:34Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:42:35Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:42:35Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'string' logged in successfully", "timestamp": "2024-05-15T10:42:35Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:42:35Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: string", "timestamp": "2024-05-15T10:42:35Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:43:08Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' logged in successfully", "timestamp": "2024-05-15T10:43:08Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' logged in successfully", "timestamp": "2024-05-15T10:43:08Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:43:08Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' logged in successfully", "timestamp": "2024-05-15T10:43:09Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' logged in successfully", "timestamp": "2024-05-15T10:46:47Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' logged in successfully", "timestamp": "2024-05-15T10:46:47Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:46:47Z", "metadata": {"source": "../logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:48:56Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:48:56Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:48:56Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:48:56Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:48:59Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Login failed for user: omkar", "timestamp": "2024-05-15T10:48:59Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' signed up successfully", "timestamp": "2024-05-15T10:49:45Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Signup failed for user: omkar", "timestamp": "2024-05-15T10:49:47Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Signup failed for user: omkar", "timestamp": "2024-05-15T10:49:48Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Signup failed for user: omkar", "timestamp": "2024-05-15T10:49:48Z", "metadata": {"source": "./logs/auth/app.log"}}
+    {"level": "info", "log_string": "User 'omkar' signed up successfully", "timestamp": "2024-05-15T10:49:49Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' signed up successfully", "timestamp": "2024-05-15T10:49:50Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "info", "log_string": "User 'omkar' signed up successfully", "timestamp": "2024-05-15T10:49:50Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Failed to get profile for user: omkarponde", "timestamp": "2024-05-15T10:50:48Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Failed to get profile for user: omkarponde", "timestamp": "2024-05-15T10:50:50Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Failed to get profile for user: omkarponde", "timestamp": "2024-05-15T10:50:50Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "info", "log_string": "Profile retrieved successfully for user: omkarponde", "timestamp": "2024-05-15T10:50:51Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "error", "log_string": "Failed to get profile for user: omkarponde", "timestamp": "2024-05-15T10:50:51Z", "metadata": {"source": "./logs/auth/app.log"}}
+{"level": "info", "log_string": "Profile retrieved successfully for user: omkarponde", "timestamp": "2024-05-15T10:50:52Z", "metadata": {"source": "./logs/auth/app.log"}}

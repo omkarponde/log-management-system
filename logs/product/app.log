@@ -1,0 +1,29 @@
+{"level": "error", "log_string": "Create Product - Failed to create product for user ID 876543: Product with same name already exists.", "timestamp": "2024-05-15T10:53:34Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Create Product - Failed to create product for user ID 876543: Unauthorized", "timestamp": "2024-05-15T10:53:37Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Create Product - Successfully created product 695105 by user 876543", "timestamp": "2024-05-15T10:53:38Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Create Product - Successfully created product 577678 by user 876543", "timestamp": "2024-05-15T10:53:38Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Create Product - Failed to create product for user ID 876543: Unauthorized", "timestamp": "2024-05-15T10:53:38Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Update Product - Failed to update product 57676 for user ID 0: Product not found", "timestamp": "2024-05-15T10:54:13Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Update Product - Successfully updated product 57676 by user 0", "timestamp": "2024-05-15T10:54:13Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Update Product - Failed to update product 57676 for user ID 0: Server Error", "timestamp": "2024-05-15T10:54:16Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Update Product - Failed to update product 57676 for user ID 0: Product not found", "timestamp": "2024-05-15T10:54:16Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Update Product - Failed to update product 57676 for user ID 0: Product not found", "timestamp": "2024-05-15T10:54:17Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Update Product - Failed to update product 57676 for user ID 0: Unauthorized", "timestamp": "2024-05-15T10:54:17Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Update Product - Failed to update product 57676 for user ID 0: Unauthorized", "timestamp": "2024-05-15T10:54:17Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Get Product - Successfully retrieved product 987654", "timestamp": "2024-05-15T10:54:34Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Get Product - Successfully retrieved product 987654", "timestamp": "2024-05-15T10:54:35Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Get Product - Failed to get product 987654: Server Error", "timestamp": "2024-05-15T10:54:35Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Get Product - Successfully retrieved product 987654", "timestamp": "2024-05-15T10:54:36Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Get Product - Successfully retrieved product 987654", "timestamp": "2024-05-15T10:54:36Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Get Product - Failed to get product 987654: Product not found", "timestamp": "2024-05-15T10:54:36Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:00Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:03Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:03Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:03Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:03Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Delete Product - Failed to delete 9876543 product for user ID 0: Unauthorized", "timestamp": "2024-05-15T10:55:04Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "error", "log_string": "Delete Product - Failed to delete 9876543 product for user ID 0: Unauthorized", "timestamp": "2024-05-15T10:55:04Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:04Z", "metadata": {"source": "./logs/product/app.log"}}
+    {"level": "error", "log_string": "Delete Product - Failed to delete 9876543 product for user ID 0: Unauthorized", "timestamp": "2024-05-15T10:55:04Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:04Z", "metadata": {"source": "./logs/product/app.log"}}
+{"level": "info", "log_string": "Delete Product - Successfully deleted product 9876543 by user ID 0", "timestamp": "2024-05-15T10:55:04Z", "metadata": {"source": "./logs/product/app.log"}}

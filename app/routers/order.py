@@ -1,11 +1,11 @@
-from fastapi import APIRouter, Depends, HTTPException, status
-from schemas import Order
+from fastapi import APIRouter, HTTPException, status
+from app.schemas import Order
 import random
 from logging.config import fileConfig
 import logging
-from custom_json_formatter import CustomJsonFormatter
+from app.custom_json_formatter import CustomJsonFormatter
 
-fileConfig('logging_config.ini')
+fileConfig('./app/logging_config.ini')
 
 
 # Ensure handlers use the custom JSON formatter

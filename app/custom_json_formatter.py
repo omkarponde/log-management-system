@@ -22,10 +22,10 @@ class CustomJsonFormatter(logging.Formatter):
     def _get_log_file_path(self, record):
         logger_name = record.name
         if logger_name.startswith('auth'):
-            return "../logs/auth/app.log"
+            return "./logs/auth/app.log"
         elif logger_name.startswith('order'):
-            return "../logs/order/app.log"
+            return "./logs/order/app.log"
         elif logger_name.startswith('product'):
-            return "../logs/product/app.log"
+            return "./logs/product/app.log"
         else:
             return "unknown"

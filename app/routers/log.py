@@ -1,9 +1,7 @@
 import json
 import os
-from datetime import datetime
-
-from fastapi import FastAPI, Query, APIRouter
-from schemas import LogEntry
+from fastapi import Query, APIRouter
+from app.schemas import LogEntry
 from typing import Optional, List
 
 log_router = APIRouter(
@@ -28,7 +26,7 @@ def read_logs(log_dir: str) -> List[LogEntry]:
     return logs
 
 
-logs_directory = "../logs/"  # Update this with your logs directory
+logs_directory = "./logs/"  # Update this with your logs directory
 
 
 @log_router.get("/")

@@ -2,17 +2,14 @@ import logging.config
 import configparser
 import os
 from fastapi import FastAPI
-from routers import auth_router, order_router, product_router, log_router
-
-# Ensure the logs directory exists
-os.makedirs('logs/auth', exist_ok=True)
+from app.routers import auth_router, order_router, product_router, log_router
 
 # Read logging configuration from INI file
 config = configparser.ConfigParser()
-config.read('logging_config.ini')
+config.read('./app/logging_config.ini')
 
 # Apply logging configuration
-logging.config.fileConfig('logging_config.ini')
+logging.config.fileConfig('./app/logging_config.ini')
 
 # Initialize the FastAPI application
 app = FastAPI()
