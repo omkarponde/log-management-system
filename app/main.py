@@ -35,6 +35,6 @@ async def read_root():
 if __name__ == "__main__":
     create_log_directory()
 
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    # import uvicorn
+    # uvicorn.run(app, host="0.0.0.0", port=8000)
 
