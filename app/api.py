@@ -32,6 +32,8 @@ def create_log_directory():
 
 @app.get("/")
 async def read_root():
+    create_log_directory()
+
     return {"message": "Hello, FastAPI!!!"}
 
 if __name__ == "__main__":
