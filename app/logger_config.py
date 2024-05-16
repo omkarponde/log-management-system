@@ -6,6 +6,7 @@ from app.custom_json_formatter import CustomJsonFormatter
 config = configparser.ConfigParser()
 config.read('./app/logging_config.ini')
 
+
 # for logger_name in ["auth_logger", "order_logger", "product_logger"]:
 def get_logger(logger_name):
     logging.config.fileConfig('./app/logging_config.ini')
