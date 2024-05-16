@@ -15,7 +15,7 @@ app.include_router(log_router)
 
 
 def create_log_directory():
-    current_dir = "/tmp" #os.path.dirname(__file__)
+    current_dir = os.path.join(os.path.dirname(__file__), 'tmp')
     log_dir = os.path.join(current_dir, "logs")
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
