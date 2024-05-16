@@ -46,7 +46,7 @@ Log Ingestor is a Python application built using FAST API that implements a logg
 1. Start the application:
 
     ```bash
-    uvicorn app.main:app --reload
+    uvicorn app.api:app --reload
     ```
 
 2. Access the APIs using the following endpoints:
@@ -61,9 +61,12 @@ The logging system captures activity from the APIs and writes logs to a designat
 3. **Product**: Logs related to product management activities.
 
 These logs are stored in the following directory structure:
-1. ./logs/auth/app.log
-2. ./logs/product/app.log
-3. ./logs/order/app.log
+    - `./app/tmp/logs/auth/app.log`
+    - `./app/tmp/logs/auth/error.log`
+    - `./app/tmp/logs/product/app.log`
+    - `./app/tmp/logs/product/error.log`
+    - `./app/tmp/logs/order/app.log`
+    - `./app/tmp/logs/order/error.log`
 ## Example Log Entry
 
 Here's an example of a log entry in the specified format:
@@ -74,7 +77,7 @@ Here's an example of a log entry in the specified format:
     "log_string": "Delete Order - Failed to delete order 0 by user ID 0: Unauthorized",
     "timestamp": "2023-09-15T08:00:00Z",
     "metadata": {
-        "source": "./logs/order/app.log"
+        "source": "./app/tmp/logs/order/error.log"
     }
 }
 ```
@@ -87,9 +90,12 @@ You can filter logs in the Swagger UI based on the following criteria:
 2. **Log String**: Enter keywords like "Success" to see success logs, "Failed" to see failure logs, "Create", Update, Delete or "Get" to see specific logs.
 3. **Time Range**: Specify a start time and end time in the format `YYYY-MM-DDTHH:MM:SSZ` to filter logs within a specific time range.
 4. **Source**: Choose the source log file from the following options:
-    - `./logs/auth/app.log`
-    - `./logs/product/app.log`
-    - `./logs/order/app.log`
+    - `./app/tmp/logs/auth/app.log`
+    - `./app/tmp/logs/auth/error.log`
+    - `./app/tmp/logs/product/app.log`
+    - `./app/tmp/logs/product/error.log`
+    - `./app/tmp/logs/order/app.log`
+    - `./app/tmp/logs/order/error.log`
 
 Ensure to enter the time range in the specified format for accurate filtering.
  The hosted URL of the project -> https://log-management-system-899428d80083.herokuapp.com/docs
