@@ -87,7 +87,7 @@ Here's an example of a log entry in the specified format:
 You can filter logs in the Swagger UI based on the following criteria:
 
 1. **Level**: Filter logs by severity level, which can be "info" or "error".
-2. **Log String**: Enter keywords like "Success" to see success logs, "Failed" to see failure logs, "Create", Update, Delete or "Get" to see specific logs.
+2. **Log String**: Enter keywords like "Success" to see success logs, "Failed" to see failure logs, "Create", Update, Delete or "Get" to see specific logs. You can also use "Product" or "Order" to search fot the logs realted to those services. Note: This is case sensitive input field. Example: Use "Update Order" and you will get all the logs regarding update order.
 3. **Time Range**: Specify a start time and end time in the format `YYYY-MM-DDTHH:MM:SSZ` to filter logs within a specific time range.
 4. **Source**: Choose the source log file from the following options:
     - `./app/tmp/logs/auth/app.log`
