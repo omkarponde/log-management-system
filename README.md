@@ -92,3 +92,4 @@ You can filter logs in the Swagger UI based on the following criteria:
     - `./logs/order/app.log`
 
 Ensure to enter the time range in the specified format for accurate filtering.
+ The hosted URL of the project -> https://log-management-system-899428d80083.herokuapp.com/docs
