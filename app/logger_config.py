@@ -6,12 +6,19 @@ from app.custom_json_formatter import CustomJsonFormatter
 config = configparser.ConfigParser()
 config.read('./app/logging_config.ini')
 
+# Configure logging
+logging.config.fileConfig('./app/logging_config.ini')
 
-# for logger_name in ["auth_logger", "order_logger", "product_logger"]:
+
 def get_logger(logger_name):
-    logging.config.fileConfig('./app/logging_config.ini')
     logger = logging.getLogger(logger_name)
     for handler in logger.handlers:
         if isinstance(handler, logging.FileHandler):
-            handler.setFormatter(CustomJsonFormatter())
+            if 'app.log' in handler.baseFilename:
+                service_name = logger_name.split('_')[0]
+                source_path = f'./app/tmp/logs/{service_name}/app.log'
+            elif 'error.log' in handler.baseFilename:
+                service_name = logger_name.split('_')[0]
+                source_path = f'./app/tmp/logs/{service_name}/error.log'
+            handler.setFormatter(CustomJsonFormatter(source_path))
     return logger

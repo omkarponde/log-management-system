@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException, status
 from app.schemas import Product
 import random
-from app.logger_config import get_logger
 
 product_router = APIRouter(prefix="/product", tags=["Product"])
+
 
 @product_router.post("", status_code=status.HTTP_201_CREATED)
 async def add_product(product: Product):

@@ -4,28 +4,26 @@ import time
 
 
 class CustomJsonFormatter(logging.Formatter):
-    def __init__(self, *args, **kwargs):
+    def __init__(self, source_path, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.source_path = source_path
 
     def format(self, record):
-        log_file_path = self._get_log_file_path(record)
+        # Create log entry
         log_entry = {
             "level": record.levelname.lower(),
             "log_string": record.getMessage(),
             "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(record.created)),
             "metadata": {
-                "source": log_file_path
+                "source": self.source_path
             }
         }
         return json.dumps(log_entry)
 
-    def _get_log_file_path(self, record):
-        logger_name = record.name
-        if logger_name.startswith('auth'):
-            return "./app/tmp/logs/auth/app.log"
-        elif logger_name.startswith('order'):
-            return "./app/tmp/logs/order/app.log"
-        elif logger_name.startswith('product'):
-            return "./app/tmp/logs/product/app.log"
-        else:
-            return "unknown"
+    def formatException(self, ei):
+        exception_data = super().formatException(ei)
+        return json.dumps({"exception": exception_data})
+
+    def formatStack(self, stack_info):
+        stack_data = super().formatStack(stack_info)
+        return json.dumps({"stack": stack_data})

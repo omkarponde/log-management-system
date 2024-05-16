@@ -1,10 +1,6 @@
-import logging
 import os
-
-import uvicorn
 from fastapi import FastAPI
 from app.routers import auth_router, order_router, product_router, log_router
-
 
 app = FastAPI()
 # Include the auth router
@@ -30,11 +26,13 @@ def create_log_directory():
     else:
         print(f"Log directory already exists: {log_dir}")
 
+
 @app.get("/")
 async def read_root():
     create_log_directory()
 
     return {"message": "Hello, FastAPI!!!"}
+
 
 if __name__ == "__main__":
     try:
@@ -42,7 +40,6 @@ if __name__ == "__main__":
     except:
         print("exception occured")
 #     # import uvicorn
-    # uvicorn.run(app, host="0.0.0.0", port=8000)
-    # port = int(os.getenv("PORT", 8000))
-    # uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=True)
-
+# uvicorn.run(app, host="0.0.0.0", port=8000)
+# port = int(os.getenv("PORT", 8000))
+# uvicorn.run("app.main:app", host="0.0.0.0", port=port, reload=True)

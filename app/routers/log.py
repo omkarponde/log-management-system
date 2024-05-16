@@ -26,10 +26,8 @@ def read_logs(log_dir: str) -> List[LogEntry]:
     return logs
 
 
-logs_directory = "./app/tmp/logs/"  # Update this with your logs directory
+logs_directory = "./app/tmp/logs/"
 
-
-# logs_directory = "./logs/"
 
 @log_router.get("/")
 async def query_logs(

@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, HTTPException, status
 from app.schemas import UserLogin, UserSignup
 import random
 from app.logger_config import get_logger
