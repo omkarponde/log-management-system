@@ -61,12 +61,20 @@ The logging system captures activity from the APIs and writes logs to a designat
 3. **Product**: Logs related to product management activities.
 
 These logs are stored in the following directory structure:
-    - `./app/tmp/logs/auth/app.log`
-    - `./app/tmp/logs/auth/error.log`
-    - `./app/tmp/logs/product/app.log`
-    - `./app/tmp/logs/product/error.log`
-    - `./app/tmp/logs/order/app.log`
-    - `./app/tmp/logs/order/error.log`
+```
+app/
+└── tmp/
+    └── logs/
+        ├── auth/
+        │   ├── app.log
+        │   └── error.log
+        ├── product/
+        │   ├── app.log
+        │   └── error.log
+        └── order/
+            ├── app.log
+            └── error.log
+```
 ## Example Log Entry
 
 Here's an example of a log entry in the specified format:
@@ -98,4 +106,7 @@ You can filter logs in the Swagger UI based on the following criteria:
     - `./app/tmp/logs/order/error.log`
 
 Ensure to enter the time range in the specified format for accurate filtering.
- The hosted URL of the project -> https://log-management-system-899428d80083.herokuapp.com/docs
+The hosted URL of the project -> https://log-management-system-899428d80083.herokuapp.com/docs
+
+### Note: 
+When you visit the hosted URL, you will be directed to the Swagger UI of the application. Use the CRUD APIs listed under Authentication, Order, and Product Services to create corresponding logs. Then, utilize the query API in the log service to filter and retrieve the logs.
